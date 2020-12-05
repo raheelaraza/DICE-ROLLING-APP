@@ -1,37 +1,15 @@
-class FirstRoute extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-    return Scaffold(
-    appBar: AppBar(
-    title: Text('First Route'),
-    ),
-    body: Center(
-    child: ElevatedButton(
-    child: Text('Open route'),
-    onPressed: () {
-    // Navigate to second route when tapped.
-    },
-    ),
-    ),
-    );
-    }
-    }
+2.1.0
 
-    class SecondRoute extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-    return Scaffold(
-    appBar: AppBar(
-    title: Text("Second Route"),
-    ),
-    body: Center(
-    child: ElevatedButton(
-    onPressed: () {
-    // Navigate back to first route when tapped.
-    },
-    child: Text('Go back!'),
-    ),
-    ),
-    );
-    }
-    }
+    environment:
+    sdk: ">=2.1.0 <3.0.0"
+
+    dependencies:
+    flutter:
+    sdk: flutter
+
+    dev_dependencies:
+    flutter_test:
+    sdk: flutter
+
+    flutter:
+    uses-material-design: true
